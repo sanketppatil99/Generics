@@ -7,8 +7,8 @@ namespace FindMaximum
     {
         public static void Main(string[] args)
         {
-            //Test case 1.1
-            string c = TestCaseOne.MaxNumber("Peach", "Apple", "Banana"); 
+            //Test case 1.2
+            string c = TestCaseOne.MaxNumber("Apple", "Peach", "Banana"); 
 
 
             Console.WriteLine("Maximum Number is : {0}", c);
