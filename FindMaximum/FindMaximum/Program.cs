@@ -6,8 +6,8 @@ namespace FindMaximum
     {
         public static void Main(string[] args)
         {
-                                                              //Test case 1.3
-            int c = TestCaseOne.MaxNumber(45, 39, 59);
+            //Test case 1.1
+            float c = TestCaseOne.MaxNumber(57.25f, 39.65f, 50.58f);
 
 
             Console.WriteLine("Maximum Number is : {0}", c);

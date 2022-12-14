@@ -9,7 +9,7 @@ namespace FindMaximumProblem
     public class TestCaseOne
     {
 
-        public static int MaxNumber(int firstNumber, int secondNumber, int thirdNumber)
+        public static float MaxNumber(float firstNumber, float secondNumber, float thirdNumber)
         {
             if (firstNumber.CompareTo(secondNumber) > 0 && firstNumber.CompareTo(thirdNumber) > 0)
             {
