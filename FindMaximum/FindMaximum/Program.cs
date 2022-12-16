@@ -7,18 +7,23 @@ namespace FindMaximum
     {
         public static void Main(string[] args)
         {
-
-            Console.WriteLine("Welcome to Find Maximum Problem using Generics");
-
-            double n = RefactorCode1<double>.MaxValue(50.5, 45.6, 48.5);
-            int a = RefactorCode1<int>.MaxValue(70, 60, 50);
-            string c = RefactorCode1<string>.MaxValue("Peach", "Apple", "Banana");
-
-
-
-            Console.WriteLine("Maximum int in is: {0}", a);
-            Console.WriteLine("Maximum Number in float is: {0}", n);
-            Console.WriteLine("Maximum value in string is: {0}", c);
+            Console.WriteLine("Program for Find max");
+            Console.WriteLine("--------------------");
+            GenericsMax<int> intMax = new GenericsMax<int>(25, 22, 21);
+            int max = intMax.TestMaximum();
+            Console.WriteLine("Max Value is: {0}", max);
+            Console.WriteLine("--------------------");
+            GenericsMax<double> doubleMax = new GenericsMax<double>(45.5, 36.1, 89.4);
+            double dMax = doubleMax.TestMaximum();
+            Console.WriteLine("Max Value is: {0}", dMax);
+            Console.WriteLine("--------------------");
+            GenericsMax<string> strMax = new GenericsMax<string>("111", "222", "333");
+            string sMax = strMax.TestMaximum();
+            Console.WriteLine("Max Value is: {0}", sMax);
+            Console.WriteLine("--------------------");
+            GenericsMax<string> strMax1 = new GenericsMax<string>("apple", "ball", "cat");
+            sMax = strMax1.TestMaximum();
+            Console.WriteLine("Max Value is: {0}", sMax);
         }
 
 
